@@ -1,7 +1,12 @@
+import Banner from '../components/Banner';
+
 function Home() {
     return (
         <div>
-            <h1>Bienvenue sur Kasa</h1>
+            <Banner
+                title="Chez vous, partout et ailleurs"
+                className="banner-home"
+            />
         </div>
     )
 }

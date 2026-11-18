@@ -1,7 +1,11 @@
+import Banner from '../components/Banner';
+
 function About() {
     return (
         <div>
-            <h1>Bienvenue sur la page À propos</h1>
+            <Banner
+                className="banner-about"
+            />
         </div>
     )
 }

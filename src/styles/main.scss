@@ -32,6 +32,36 @@ header {
     }
 }
 
+.banner {
+    width: auto;
+    height: auto;
+    min-height: 223px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+
+    &.banner-home {
+       background-image:
+       linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),
+       url('../assets/home-banner.png');
+    }
+    
+    &.banner-about {
+        background-image:
+        linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
+        url('../assets/about-banner.png');
+    }
+
+    h1 {
+        text-align: center;
+        padding: 78px 0;
+        font-size: 48px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 1.43;
+    }
+}
+
 .container {
     margin: 45px 100px 50px 100px;
 }
@@ -71,6 +101,16 @@ footer {
             a {
                 font-size: 12px;
             }
+        }
+    }
+
+    .banner {
+        min-height: 111px;
+
+        h1 {
+            text-align: left;
+            padding: 31px 0 31px 16px;
+            font-size: 24px;
         }
     }
 
