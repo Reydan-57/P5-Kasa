@@ -171,6 +171,34 @@ header {
     }
 }
 
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 139px;
+    margin: 139px 0;
+
+    h1 {
+        font-size: 288px;
+        font-weight: 700;
+        color: $primary-color;
+        margin: 0;
+    }
+
+    p {
+        font-size: 36px;
+        font-weight: 500;
+        color: $primary-color;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+    }
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -266,6 +294,23 @@ footer {
                 max-height: 400px;
 
             }
+        }
+    }
+
+    .not-found {
+        gap: 113px;
+        margin: 113px 0;
+
+        h1 {
+            font-size: 96px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 14px;
         }
     }
 
