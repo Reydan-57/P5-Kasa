@@ -1,5 +1,5 @@
 import './styles/main.scss'
-import AppRouter from './router/AppRouter.jsx'
+import { Outlet } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="container">
         <Header />
-        <AppRouter />
+        <Outlet />
       </div>
       <Footer />
     </>
