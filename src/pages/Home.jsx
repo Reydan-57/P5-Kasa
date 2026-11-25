@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
-import logements from '../data/logements.json';
 
 function Home() {
+    const logements = useLoaderData();
     return (
         <div>
             <Banner

@@ -4,6 +4,7 @@ import Home from '../pages/Home.jsx'
 import About from '../pages/About.jsx'
 import NotFound from '../pages/NotFound.jsx'
 import Logement from '../pages/Logement.jsx'
+import logementLoader from '../loaders/logementLoader.js'
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
+                loader: logementLoader,
                 element: <Home />
             },
             {

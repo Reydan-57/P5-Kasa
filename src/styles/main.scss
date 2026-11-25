@@ -199,6 +199,40 @@ header {
     }
 }
 
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .spinner {
+        border: 10px solid grey;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border-top-color: $primary-color;
+        animation: spin 1s linear infinite;
+    }
+
+    p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary-color;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 footer {
     display: flex;
     flex-direction: column;
