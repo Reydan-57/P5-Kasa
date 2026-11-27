@@ -7,7 +7,7 @@ function delay(ms) {
 }
 
 async function logementLoader() {
-    await delay(2000);
+    await delay(500);
     return logements
 }
 
